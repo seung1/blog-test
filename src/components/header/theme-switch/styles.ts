@@ -5,8 +5,9 @@ export const Container = styled('div', NavItemStyle, {
   marginLeft: 'auto',
 });
 
-export const Button = styled('button', NavItemStyle, {
+export const Button = styled('div', NavItemStyle, {
   border: 0,
+  cursor: 'pointer',
 
   appearance: 'none',
   background: 'transparent',
