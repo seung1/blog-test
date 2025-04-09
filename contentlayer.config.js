@@ -30,7 +30,6 @@ const postFields = {
     category: {
       type: 'string',
       description: 'The category of the post',
-      required: true,
     },
   },
   computedFields: {
