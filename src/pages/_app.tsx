@@ -1,14 +1,13 @@
-import { AppProps } from 'next/app';
+import { SEOConfig } from 'blog.config';
 import { DefaultSeo } from 'next-seo';
 import { ThemeProvider } from 'next-themes';
+import { AppProps } from 'next/app';
+import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
 
-import { SEOConfig } from 'blog.config';
 import Footer from '~/components/footer';
 import GoogleAnalytics from '~/components/google-analytics';
 import { Header } from '~/components/header';
 import { darkTheme, globalCss, styled } from '~/stitches.config';
-
-import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
 
 const globalStyles = globalCss({
   '*': {

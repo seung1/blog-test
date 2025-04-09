@@ -1,16 +1,16 @@
-import { ParsedUrlQuery } from 'querystring';
-
+import { MDXPost, Post, allMDXPosts, allPosts } from 'contentlayer/generated';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
+import { ParsedUrlQuery } from 'querystring';
 
-import { BlogConfig, SEOConfig } from '../../../blog.config';
-import { allMDXPosts, allPosts, MDXPost, Post } from 'contentlayer/generated';
+import MDXContent from '~/components/MDXContent';
 import { ArticleHeader } from '~/components/article/header';
 import Giscus from '~/components/comment/giscus';
 import Utterances from '~/components/comment/utterances';
 import Content from '~/components/content';
-import MDXContent from '~/components/MDXContent';
 import { styled } from '~/stitches.config';
+
+import { BlogConfig, SEOConfig } from '../../../blog.config';
 
 type Props = {
   post: Post | MDXPost;
