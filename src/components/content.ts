@@ -87,6 +87,14 @@ const Content = styled('div', {
       lineHeight: 1.5,
     },
   },
+  b: {
+    display: 'block',
+    fontSize: '1.125rem',
+    lineHeight: 1.75,
+    paddingLeft: '1rem',
+    color: '$orange1',
+    fontWeight: 500,
+  },
   hr: {
     border: 0,
     borderTop: '1px solid $hr',

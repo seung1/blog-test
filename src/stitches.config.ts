@@ -1,4 +1,5 @@
 import { createStitches } from '@stitches/react';
+
 export const { getCssText, globalCss, styled, createTheme, css, keyframes } =
   createStitches({
     theme: {
@@ -54,6 +55,7 @@ export const { getCssText, globalCss, styled, createTheme, css, keyframes } =
       },
     },
     media: {
+      xs: '(max-width: 450.98px)',
       sm: '(max-width: 767.98px)',
       md: '(max-width: 991.98px)',
       lg: '(max-width: 1199.98px)',

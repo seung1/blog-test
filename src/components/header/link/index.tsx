@@ -1,6 +1,7 @@
+import React from 'react';
+
 import type NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
 import Tooltip from '~/components/header/tooltip';
 

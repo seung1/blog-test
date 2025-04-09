@@ -27,6 +27,11 @@ const postFields = {
       type: 'string',
       description: 'The thumbnail image file path of the post for SEO',
     },
+    category: {
+      type: 'string',
+      description: 'The category of the post',
+      required: true,
+    },
   },
   computedFields: {
     url: {
