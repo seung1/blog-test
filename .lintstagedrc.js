@@ -9,6 +9,5 @@ module.exports = {
   '*.{ts,tsx}': (filenames) => [
     'pnpm typecheck',
     buildEslintCommand(filenames),
-    'git add',
   ],
 };

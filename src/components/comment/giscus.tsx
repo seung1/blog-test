@@ -39,18 +39,20 @@ const Giscus = () => {
     Object.entries(config).forEach(([key, value]) => {
       script.setAttribute(key, `${value}`);
     });
-    ref.current?.childNodes.forEach((children) => {
-      ref.current?.removeChild(children);
+
+    const currentRef = ref.current;
+    currentRef?.childNodes.forEach((children) => {
+      currentRef?.removeChild(children);
     });
 
-    ref.current?.appendChild(script);
+    currentRef?.appendChild(script);
 
     return () => {
-      ref.current?.childNodes.forEach((children) => {
-        ref.current?.removeChild(children);
+      currentRef?.childNodes.forEach((children) => {
+        currentRef?.removeChild(children);
       });
     };
-  }, []);
+  }, [ref, theme]);
 
   useEffect(() => {
     sendMessage({
