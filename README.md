@@ -46,7 +46,7 @@ export const Header = () => {
 >
 > Using Contentlayer data with client components is likely to require users to download data from the entire page. Unless solving a specific need that requires Contentlayer, we recommend using server components.
 
-- 공식문서에 따르면 서버컴포넌트에 최적화 되어있고 서버환경에서 접근하라고 안내하고 있다.
+- [공식문서](https://contentlayer.dev/docs/environments/nextjs-dcf8e39e?utm_source=chatgpt.com#app-directory)에 따르면 서버컴포넌트에 최적화 되어있고 서버환경에서 접근하라고 안내하고 있다.
 - 결국 사용하는 라이브러리의 사용법조차 안읽고 사용하려했던 것이 문제를 발생시켰다.
 
 ## 해결
